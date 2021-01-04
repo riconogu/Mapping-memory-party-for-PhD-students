@@ -17,7 +17,27 @@
   <div id="map"></div>
   <script>
     var map = L.map('map',{scrollWheelZoom:true}).setView(42.73231271416933, -84.48218566794272], 9);
-     L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=JeVxhgFzwCTb5AHvFBRi', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',} ).addTo(map);
+    L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=JeVxhgFzwCTb5AHvFBRi', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',} ).addTo(map);
+      var point01 = [42.734031697696835, -84.47754612127481]
+     var marker = L.marker(point01);
+     marker.addTo(map);
+     marker.bindPopup("<b>Peanut Barrel</b>"); 
+     var point02 = [42.73638884195209, -84.48272351557644]
+     var marker = L.marker(point02);
+     marker.addTo(map);
+     marker.bindPopup("<b>Harper's Restaurant & Brew Pub</b>");
+     var point03 = [42.73671192748708, -84.48409680655563]
+     var marker = L.marker(point03);
+     marker.addTo(map);
+     marker.bindPopup("<b>Dublin Square</b>")
+     var point04 = [42.73420279978642, -84.5200229362243]
+     var marker = L.marker(point04);
+     marker.addTo(map);
+     marker.bindPopup("<b>The Avenue</b>")
+     var point05 = [42.73375217346131, -84.52207348211667]
+     var marker = L.marker(point05);
+     marker.addTo(map);
+     marker.bindPopup("<b>The Green Door Bar & Grill</b>") 
   </script>
    
 </body >
