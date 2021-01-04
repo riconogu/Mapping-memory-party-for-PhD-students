@@ -7,23 +7,23 @@
     
     <title> Mapping Memory Challenge</title>
 
-<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
   
 
 </head>
 
 <body>
-   <div id='map' style='width: 1200px; height: 700px;'></div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoicmljb25vZ3UiLCJhIjoiY2tqaW00aHRpM3hueDJ4cDk3anUyM212dyJ9.gRNG0VCNG0LfVgciQtC07A';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-center: [42.731291409048474, -84.48344286661083], // starting position [lng, lat]
-zoom: 9 // starting zoom
-});
-</script>
+  <div id="mapid"></div>
+        #map {
+            width: 100%;
+            height: 600px;
+        }
+var mymap = L.map('mapid').setView([51.505, -0.09], 13);   
    
 </body >
 </html >
