@@ -16,9 +16,7 @@
   <div id="map"></div>
   <script>
     var map = L.map('map',{scrollWheelZoom:true}).setView([42.9752, -82.3451], 9);
-     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+     L.tileLayer('mapbox.mapbox-streets-v8').addTo(map);
   </script>
    
 </body >
