@@ -1,69 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 
 <head>
+    
+    <title> Mapping Memory Challenge</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>The Big Picture - Start Bootstrap Template</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/the-big-picture.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <style>
+        #map {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
 
 </head>
 
 <body>
+    <h3><center>Mapping the PARTY FOR MSU PHD STUDENTS</center></h3>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
-    <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <div id="map"></div>
 
-  <!-- Page Content -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="mt-5">The Big Picture</h1>
-          <p>Friendship is critical for a meaningful scholarship, and partying is one of the most straightforward methods to build new friendships. We are creating a map for MSU Ph.D. students looking to find a place where friendship can grow with the help of good conversations, or beers, or dancing, or all of those things at the same time.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <script>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        var map = L.map('map', { scrollWheelZoom: false }).setView([42.9752, -82.3451], 6);
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        var point01 = [42.734031697696835, -84.47754612127481]
+        var marker = L.marker(point01);
+        marker.addTo(map);
+        marker.bindPopup("<b>Peanut Barrel</b>"); 
+        var point02 = [42.73638884195209, -84.48272351557644]
+        var marker = L.marker(point02);
+        marker.addTo(map);
+        marker.bindPopup("<b>Harper's Restaurant & Brew Pub</b>");
+        var point03 = [42.73671192748708, -84.48409680655563]
+        var marker = L.marker(point03);
+        marker.addTo(map);
+        marker.bindPopup("<b>Dublin Square</b>")
+        var point04 = [42.73420279978642, -84.5200229362243]
+        var marker = L.marker(point04);
+        marker.addTo(map);
+        marker.bindPopup("<b>The Avenue</b>")
+        var point05 = [42.73375217346131, -84.52207348211667]
+        var marker = L.marker(point05);
+        marker.addTo(map);
+        marker.bindPopup("<b>The Green Door Bar & Grill</b>") 
 
-</body>
 
-</html>
+    </script>
+   
+</body >
+</html >
