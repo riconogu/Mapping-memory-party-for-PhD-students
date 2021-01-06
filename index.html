@@ -2,56 +2,63 @@
 
 <html>
 
-
 <head>
-    
-    <title> Mapping Memory Challenge</title>
 
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-    <style>
-        #map {
-            width: 100%;
-            height: 600px;
-        }
-    </style>
+<title> Mapping Memory Challenge</title>
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+<style>
+#map {
+  width: 100%;
+  height: 600px;
+}
+</style>
 
 </head>
 
 <body>
-    <h3><center>Mapping the PARTY FOR MSU PHD STUDENTS</center></h3>
 
-    <div id="map"></div>
+  <h3><center>Mapping the PARTY FOR MSU PHD STUDENTS</center></h3>
 
-    <script>
+  <div id="map"></div>
 
-        var map = L.map('map', { scrollWheelZoom: false }).setView([42.9752, -82.3451], 6);
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-        var point01 = [42.734031697696835, -84.47754612127481]
-        var marker = L.marker(point01);
-        marker.addTo(map);
-        marker.bindPopup("<b>Peanut Barrel</b>"); 
-        var point02 = [42.73638884195209, -84.48272351557644]
-        var marker = L.marker(point02);
-        marker.addTo(map);
-        marker.bindPopup("<b>Harper's Restaurant & Brew Pub</b>");
-        var point03 = [42.73671192748708, -84.48409680655563]
-        var marker = L.marker(point03);
-        marker.addTo(map);
-        marker.bindPopup("<b>Dublin Square</b>")
-        var point04 = [42.73420279978642, -84.5200229362243]
-        var marker = L.marker(point04);
-        marker.addTo(map);
-        marker.bindPopup("<b>The Avenue</b>")
-        var point05 = [42.73375217346131, -84.52207348211667]
-        var marker = L.marker(point05);
-        marker.addTo(map);
-        marker.bindPopup("<b>The Green Door Bar & Grill</b>") 
+<script>
 
+  var map = L.map('map', { scrollWheelZoom: true }).setView([42.73410,-84.55388], 13);
 
-    </script>
-   
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  var point11 = [42.73412,-84.49300]
+  var marker = L.marker(point11);
+  marker.addTo(map);
+  marker.bindPopup("<b>The Roadhouse Pub</b><p><img src='https://cdn.usarestaurants.info/assets/uploads/bf97d99d313a173c1b0b9fbdbbc260a2_-united-states-michigan-ingham-county-east-lansing-the-roadhouse-pub-517-351-6868htm.jpg' alt='The Roadhouse Pub Exterior' width='180' height='120'><p>To be filled in...</p>");
+
+  var point12 = [42.73462,-84.48098]
+  var marker = L.marker(point12);
+  marker.addTo(map);
+  marker.bindPopup("<b>The Tin Can Bar</b><p><img src='https://snworksceo.imgix.net/tsn/fd2f3259-4bc5-4e11-ac68-4fe32b973ffb.sized-1000x1000.jpg?w=1000' alt='The Tin Can Bar Exterior' width='180' height='120'><p>To be filled in...</p>");
+
+  var point13 = [42.74750,-84.54395]
+  var marker = L.marker(point13);
+  marker.addTo(map);
+  marker.bindPopup("<b>Zoobie's Old Town Tavern</b><p><img src='https://snworksceo.imgix.net/tsn/5cd56b77-bd74-447d-8ed4-64e8f3c408d2.sized-1000x1000.JPG?w=1000' alt='Zoobie's Old Town Tavern Exterior' width='180' height='120'><p>To be filled in...</p>");
+
+  var point14 = [42.73644,-84.48715]
+  var marker = L.marker(point14);
+  marker.addTo(map);
+  marker.bindPopup("<b>Crunchy’s</b><p><img src='https://snworksceo.imgix.net/tsn/e30444cb-891c-47ff-933a-aff057405db1.sized-1000x1000.JPG?w=1000' alt='Crunchy's Exterior' width='180' height='120'><p>To be filled in...</p>");
+
+  var point15 = [42.73595,-84.48192]
+  var marker = L.marker(point15);
+  marker.addTo(map);
+  marker.bindPopup("<b>HopCat</b><p><img src='https://farm3.static.flickr.com/2913/14269417056_04cbe89c94.jpg' alt='HopCat Interior width='180' height='120'><p>To be filled in...</p>");
+
+</script>
+
 </body >
+
 </html >
