@@ -58,7 +58,7 @@
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            
+           
 
             <html>
 
@@ -66,8 +66,8 @@
 
                 <title>Pre-Covid Party Scene in Lansing</title>
 
-                <link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-                <script src="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+                <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+                <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
                 <style>
                     #map {
@@ -84,13 +84,11 @@
 
                 <div id="map"></div>
 
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!-- Add jQuery -->
-
                 <script>
 
                     var map = L.map('map', { scrollWheelZoom: true }).setView([42.73426777868463, -84.50905777351242], 14);
-                    L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                        attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+                    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     }).addTo(map);
 
                     var FriendshipIcon = L.Icon.extend({
