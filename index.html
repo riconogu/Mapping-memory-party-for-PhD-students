@@ -65,11 +65,13 @@
             <head>
 
                 <title>Pre-Covid Party Scene in Lansing</title>
-                <!-- changed http to https -->
-                <link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-                <script src="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-                <!-- Add jQuery -->
-			    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	        <!-- Sari: Add jQuery before leaflet js-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                <!-- changed http to https to prevent "mixed content error" and update version 0.7.3 to 3.1.1-->
+                <!--<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+                <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js" type="text/javascript"></script>
 
                 <style>
                     #map {
