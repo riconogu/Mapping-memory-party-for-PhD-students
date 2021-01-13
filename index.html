@@ -65,9 +65,11 @@
             <head>
 
                 <title>Pre-Covid Party Scene in Lansing</title>
-
+                <!-- changed http to https -->
                 <link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
                 <script src="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+                <!-- Add jQuery -->
+			    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
                 <style>
                     #map {
@@ -88,7 +90,7 @@
 
                     var map = L.map('map', { scrollWheelZoom: true }).setView([42.73426777868463, -84.50905777351242], 14);
                     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                        attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
                     }).addTo(map);
 
                     var FriendshipIcon = L.Icon.extend({
